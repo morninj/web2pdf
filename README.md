@@ -12,6 +12,7 @@ Second, clone this repository:
 
 Third, add web2pdf to your path:
 
+    $ cp screenshot.js /usr/local/bin/
     $ cp web2pdf.py /usr/local/bin/web2pdf
     $ chmod +x /usr/local/bin/web2pdf
 

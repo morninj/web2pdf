@@ -50,7 +50,7 @@ def make_screenshot(url, filename):
     # Call PhantomJS and suppress its output
     with open(os.devnull, "w") as fnull: 
         call(
-            ['phantomjs', 'screenshot.js', url, filename],
+            ['phantomjs', os.path.dirname(os.path.abspath(__file__)) + '/screenshot.js', url, filename],
             stdout=fnull,
             stderr=fnull
         )
