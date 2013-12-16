@@ -4,18 +4,45 @@ Convert webpages to PDFs for offline reading.
 
 ## Installation
 
-Clone this repository:
+First,  [install PhantomJS](http://phantomjs.org/download.html).
 
-    $ TODO
+Second, clone this repository:
 
-[Install PhantomJS](http://phantomjs.org/download.html).
+    $ git clone https://github.com/morninj/web2pdf.git
 
 ## Use
 
 ### Archive a Single URL
 
-TODO
+    $ python web2pdf.py -u http://www.nytimes.com/
+
+This will save the page as `archive.pdf`. You can change the default filename:
+
+    $ python web2pdf.py -u http://www.nytimes.com/ -o nytimes.pdf
 
 ### Archive Multiple URLs
 
-TODO
+Create a file named `input.txt` (or anything else) with one URL per line, like 
+this:
+
+    http://www.nytimes.com/
+    http://news.ycombinator.com/
+    http://www.reddit.com/
+
+Then, run:
+
+    $ python web2pdf.py -f input.txt
+
+This will save each page in a new folder named `archives`. You can also change 
+the name of the folder:
+
+    $ python web2pdf.py -f input.txt -d my_folder
+
+### Add web2pdf to Your Path
+
+    $ cp web2pdf.py /usr/local/bin/web2pdf
+    $ chmod +x /usr/local/bin/web2pdf
+
+Now you can run the command from anywhere with cleaner syntax, like this:
+
+    $ web2pdf -u http://www.nytimes.com
