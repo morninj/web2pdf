@@ -12,13 +12,22 @@ Second, clone this repository:
 
 ## Use
 
+### Add web2pdf to Your Path
+
+    $ cp web2pdf.py /usr/local/bin/web2pdf
+    $ chmod +x /usr/local/bin/web2pdf
+
+Now you can run the command from anywhere with cleaner syntax, like this:
+
+    $ web2pdf -u http://www.nytimes.com
+
 ### Archive a Single URL
 
-    $ python web2pdf.py -u http://www.nytimes.com/
+    $ web2pdf -u http://www.nytimes.com/
 
 This will save the page as `archive.pdf`. You can change the default filename:
 
-    $ python web2pdf.py -u http://www.nytimes.com/ -o nytimes.pdf
+    $ web2pdf -u http://www.nytimes.com/ -o nytimes.pdf
 
 ### Archive Multiple URLs
 
@@ -31,18 +40,10 @@ this:
 
 Then, run:
 
-    $ python web2pdf.py -f input.txt
+    $ web2pdf -f input.txt
 
 This will save each page in a new folder named `archives`. You can also change 
 the name of the folder:
 
-    $ python web2pdf.py -f input.txt -d my_folder
+    $ web2pdf.py -f input.txt -d my_folder
 
-### Add web2pdf to Your Path
-
-    $ cp web2pdf.py /usr/local/bin/web2pdf
-    $ chmod +x /usr/local/bin/web2pdf
-
-Now you can run the command from anywhere with cleaner syntax, like this:
-
-    $ web2pdf -u http://www.nytimes.com
