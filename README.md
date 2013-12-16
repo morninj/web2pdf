@@ -17,10 +17,6 @@ Second, clone this repository:
     $ cp web2pdf.py /usr/local/bin/web2pdf
     $ chmod +x /usr/local/bin/web2pdf
 
-Now you can run the command from anywhere with cleaner syntax, like this:
-
-    $ web2pdf -u http://www.nytimes.com
-
 ### Archive a Single URL
 
     $ web2pdf -u http://www.nytimes.com/
