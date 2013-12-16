@@ -10,12 +10,13 @@ Second, clone this repository:
 
     $ git clone https://github.com/morninj/web2pdf.git
 
-## Use
-
-### Add web2pdf to Your Path
+Third, add web2pdf to your path:
 
     $ cp web2pdf.py /usr/local/bin/web2pdf
     $ chmod +x /usr/local/bin/web2pdf
+
+## Use
+
 
 ### Archive a Single URL
 
